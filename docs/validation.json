@@ -1,0 +1,23 @@
+{
+  "passed": [
+    "Qt runtime",
+    "threaded reconstruction",
+    "selected pair",
+    "feature and match previews",
+    "cloud orbit",
+    "PLY and camera JSON export"
+  ],
+  "synthetic_result": {
+    "mode": "calibrated sparse two-view reconstruction",
+    "images": 2,
+    "features_first": 1503,
+    "features_second": 1446,
+    "ratio_matches": 824,
+    "accepted_points": 817,
+    "median_reprojection_error_px": 1.8803802959155291e-10,
+    "scale": "arbitrary; translation normalized to one",
+    "distortion": "assumed zero; use undistorted input",
+    "dense_mesh": false
+  },
+  "real_photo_accuracy": "not evaluated"
+}
