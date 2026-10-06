@@ -60,7 +60,7 @@ class Window(QMainWindow):
         self.import_button.clicked.connect(self.import_photos);self.run_button.clicked.connect(self.start);self.export_button.clicked.connect(self.save);self.files.itemSelectionChanged.connect(self.preview)
         self.setStyleSheet('QWidget{background:#0c2030;color:#d5e8f2;font-size:14px}QPushButton{background:#134665;border:1px solid #3186af;padding:9px;border-radius:4px}QPushButton:disabled{color:#607888;background:#142835}QListWidget,QTextEdit{background:#071723;border:1px solid #214258}QTabBar::tab{padding:10px;background:#173347}QTabBar::tab:selected{background:#07567c}QDoubleSpinBox{padding:6px;background:#173347}')
     def load_paths(self,paths):
-        self.paths=list(paths);self.files.clear()
+        self.result=None;self.export_button.setEnabled(False);self.paths=list(paths);self.files.clear();self.status.setText("Images loaded. Reconstruct the selected pair before export.")
         for p in paths:self.files.addItem(Path(p).name)
         for i in range(min(2,len(paths))):self.files.item(i).setSelected(True)
         self.preview()
