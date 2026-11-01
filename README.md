@@ -1,6 +1,12 @@
 # 3D Reconstruction Workbench
 Native Python/Qt application inspired by the supplied photogrammetry workflow image. It performs real **calibrated sparse two-view reconstruction**: SIFT features, descriptor matching, RANSAC essential matrix, relative camera pose, triangulation, positive-depth filtering, reprojection checks, image colors, and point-cloud export.
 
+## Architectural modeling reference
+
+User-supplied portfolio artwork illustrating 2D floor-plan to 3D building modeling, interior and exterior visualization, and structural views. This is reference artwork, not an output of the sparse two-view reconstruction application.
+
+![Architectural modeling portfolio showing a 2D floor plan, 3D isometric interior, exterior render, structural wireframe and bedroom visualization](docs/images/plan-to-3d-0.png)
+
 ## Install and run
 Python 3.11 or 3.12 recommended. Create a virtual environment, then `pip install -r requirements.txt`. Run `python run.py` for the desktop application.
 
